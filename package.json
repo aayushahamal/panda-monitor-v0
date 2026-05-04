@@ -1,18 +1,32 @@
 {
-  "name": "monitor-server",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "type": "commonjs",
+  "name": "monitor-v1",
+  "version": "0.1.0",
+  "private": true,
   "dependencies": {
-    "cors": "^2.8.5",
+    "axios": "^1.16.0",
+    "cors": "^2.8.6",
     "express": "^5.2.1",
-    "systeminformation": "^5.27.16"
+    "papaparse": "^5.5.3",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-scripts": "^5.0.1",
+    "recharts": "^2.15.4",
+    "systeminformation": "^5.31.5",
+    "web-vitals": "^5.2.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "server": "node index.js",
+    "dev": "npm run server & npm run start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": ["react-app", "react-app/jest"]
+  },
+  "browserslist": {
+    "production": [">0.2%", "not dead", "not op_mini all"],
+    "development": ["last 1 chrome version", "last 1 firefox version", "last 1 safari version"]
   }
 }

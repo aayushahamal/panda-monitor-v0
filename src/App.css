@@ -1,0 +1,101 @@
+body {
+  background: linear-gradient(135deg, #ffe4e1 0%, #ffc0cb 100%);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.app-container {
+  min-height: 100vh;
+  padding: 20px 120px; /* Extra padding on sides for pandas */
+  position: relative;
+}
+
+/* Panda decorations */
+.panda-side {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  opacity: 0.7;
+  pointer-events: none;
+  z-index: 5;
+}
+
+/* Left side pandas */
+.panda-left-1 { left: 20px; top: 50px; }
+.panda-left-2 { left: 20px; top: 450px; }
+.panda-left-3 { left: 20px; top: 850px; }
+.panda-left-4 { left: 20px; top: 1250px; }
+.panda-left-5 { left: 20px; top: 1650px; }
+
+/* Right side pandas */
+.panda-right-1 { right: 20px; top: 250px; }
+.panda-right-2 { right: 20px; top: 650px; }
+.panda-right-3 { right: 20px; top: 1050px; }
+.panda-right-4 { right: 20px; top: 1450px; }
+.panda-right-5 { right: 20px; top: 1850px; }
+
+/* Title */
+.main-title {
+  text-align: center;
+  margin: 20px 0 30px 0;
+  font-size: 36px;
+  color: #ff1493;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Buttons */
+.button-container {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.mode-button {
+  margin: 5px;
+  padding: 10px 20px;
+  border-radius: 20px;
+  border: none;
+  background: #ffb6c1;
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s;
+}
+
+.mode-button:hover {
+  background: #ff9bb5;
+  transform: translateY(-2px);
+}
+
+.mode-button.active {
+  background: #ff69b4;
+  transform: scale(1.05);
+}
+
+/* Chart containers */
+.chart-container {
+  background: rgba(255, 240, 245, 0.95);
+  border-radius: 15px;
+  padding: 25px;
+  margin-bottom: 25px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.chart-title {
+  color: #ff1493;
+  margin-bottom: 15px;
+  font-size: 24px;
+}
+
+.cumulative-text {
+  color: #888;
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+.cumulative-text strong {
+  color: #ff69b4;
+  font-size: 20px;
+}
