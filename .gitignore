@@ -1,0 +1,6 @@
+node_modules/
+monitor-server/node_modules/
+stats_history.csv
+.env
+build/
+.DS_Store
